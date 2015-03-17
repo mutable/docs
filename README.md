@@ -8,8 +8,8 @@ Follow the links below to learn more about the LSQ products:
 
 - [LSQ Local] - Run and monitor multiple microservices using our free desktop application.
 - [LSQ microservice templates] - Develop your own microservices using our free and open-source templates 
-- [LSQ Connect] (coming soon) - Share and test microservice applications
-- [LSQ Cloud] (coming soon) - intelligent microservice discovery
+- [LSQ Connect] - (coming soon) Share and test microservice applications
+- [LSQ Cloud] - (coming soon) Intelligent microservice discovery
 
 
 [Microservices]: http://martinfowler.com/articles/microservices.html
