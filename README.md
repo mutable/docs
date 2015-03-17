@@ -2,8 +2,6 @@
 
 LSQ is the first platform to allow you to quickly build robust applications using a **microservice architecture**. Like it's predecessor [Service-Oriented Architecture], Microservices have emerged as a solution to the challenges of developing, testing, and scaling complex applications. Recent technological advances such as cloud deployments and containerization have brought this methodology within reach of smaller teams that do not have dedicated (and expensive) Dev-Ops teams.
 
-[TOC]
-
 ##What are Microservices?
 
 > "The microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms... "
