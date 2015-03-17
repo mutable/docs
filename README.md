@@ -20,6 +20,6 @@ Follow the links below to learn more about the LSQ products:
 [Compose.io]: http://compose.io
 
 [LSQ Local]: /local.md
-[LSQ microservice templates]: https://github.com/LSQio
+[LSQ microservice templates]: https://github.com/lsqio/node-micro
 [LSQ Connect]: https://lsq.io/#products
 [LSQ Cloud]: https://lsq.io/#products
