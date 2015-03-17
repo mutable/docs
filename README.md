@@ -8,8 +8,6 @@ LSQ is the first platform to allow you to quickly build robust applications usin
 
 > Martin Fowler, *[Microservices]*
 
-----
-
 ##Microservice Architecture
 
 ### <i class="icon-cog-alt"></i> Servers
@@ -25,8 +23,6 @@ Each microservice communicates with other services using standard http connectio
 A microservice architecture works best when each microservice is stateless - each request to a microservice completely independent of the requests that came before it. Is this allows for maximum flexibility when it comes time to scale. 
 
 Furthermore, each microservice is responsible for maintaining it's own data. We currently recommend connecting to a cloud-hosted database provider, such [Compose.io]
-
-----
 
 ##What are the advantages of a microservice architecture?
 
@@ -53,8 +49,6 @@ cause and simulate failure.
 The system minimizes down-time by automating blue-green deployment, allowing gradual release / deployment of the services.
 You also have state of the art monitoring tools to help flag and fix problems early. Provision / scale new machines rapidly. 
 
-----
-
 ##So what's the problem?
 
 > "...building, deploying and maintaining distributed applications is a highly technical feat. [ ]... it requires a new toolkit that is central to solving the coordination and orchestration challenges of running systems that span across multiple machines, datacenters and time zones. "
@@ -68,8 +62,6 @@ You also have state of the art monitoring tools to help flag and fix problems ea
 ###Deployment
 
 And that's why we're building LSQ - a next-generation SaaS platform that will allow independent developers and small teams to take advantage of the 
-
-----------
 
 ##The LSQ Products
 
