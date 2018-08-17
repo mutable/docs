@@ -3,7 +3,7 @@ The Mutable family of applications and services evolves as new methodologies and
 We continuously work with our community to meet their growing development needs.
 
 #### Topics
- - [The Mutable Local App](./mutable-local/docs.md)
+ - [The Mutable Local App](./mutable-local/README.md)
  - Microservice Oriented Architecture
  - Multi-Cloud Deployment
  - Deploying to the Public Edge Cloud
