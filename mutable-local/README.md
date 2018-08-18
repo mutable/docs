@@ -12,8 +12,11 @@ The current version has a tight integration for Node.js. However, you can develo
 **Current Production Release**
 
 **v0.7.1** - [Release Notes](./release-note/v0.7.1)
+
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.1.dmg)
+
 [Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.1.tar.gz)
+
 
 
 ## Deploying
