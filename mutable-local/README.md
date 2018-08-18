@@ -11,7 +11,7 @@ The current version has a tight integration for Node.js. However, you can develo
 
 **Current Production Release**
 
-**v0.7.1** - [Release Notes](./release-notes/v0.7.1)
+**v0.7.1** - [Release Notes](./release-notes/v0.7.1.md)
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.1.dmg)
 
@@ -64,28 +64,28 @@ CMD ["start"]
 
 ## Previous Releases
 
-**v0.6.1** - [Release Notes](./release-notes/v0.6.1)
+**v0.6.1** - [Release Notes](./release-notes/v0.6.1.md)
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.1.dmg)
 
 [Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.1.zip)
 
 
-**v0.6.0** - [Release Notes](./release-notes/v0.6.0)
+**v0.6.0** - [Release Notes](./release-notes/v0.6.0.md)
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.0.dmg)
 
 
-**v0.5.2** - [Release Notes](./release-notes/v0.5.2)
+**v0.5.2** - [Release Notes](./release-notes/v0.5.2.md)
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.2.dmg)
 
 
-**v0.5.1** - [Release Notes](./release-notes/v0.5.1)
+**v0.5.1** - [Release Notes](./release-notes/v0.5.1.md)
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.1.dmg)
 
 
-**v0.5.0** - [Release Notes](./release-notes/v0.5.0)
+**v0.5.0** - [Release Notes](./release-notes/v0.5.0.md)
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.0.dmg)
