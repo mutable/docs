@@ -8,7 +8,9 @@ The current version has a tight integration for Node.js. However, you can develo
 
 ## Installing
 *Tested on macOS 10.13.6 & Ubuntu 18.04.1 LTS.* [Previous Releases](./README.md#previous-rleases)
+
 **Current Production Release**
+
 **v0.7.1** - [Release Notes](./release-note/v0.7.1)
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.1.dmg)
 [Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.1.tar.gz)
@@ -31,8 +33,13 @@ To deploy on Mutable Cloud, you need a `.mutable` and a `Dockerfile` in the root
 }
 ```
 The `.mutable` object, and Mutable Cloud, requires a `healthCheck` endpoint which responds with a lag ping.
+
 Example in Node.js using [toobusy-js](https://www.npmjs.com/package/toobusy-js). 
-```js return tooBusy.lag()+''```
+
+```js
+return tooBusy.lag()+''
+```
+
 *Note: the response must be a string.*
 
 ## Dockerfile
@@ -53,18 +60,29 @@ CMD ["start"]
 ```
 
 ## Previous Releases
+
 **v0.6.1** - [Release Notes](./release-note/v0.6.1)
+
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.1.dmg)
+
 [Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.1.zip)
 
+
 **v0.6.0** - [Release Notes](./release-note/v0.6.0)
+
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.0.dmg)
 
+
 **v0.5.2** - [Release Notes](./release-note/v0.5.2)
+
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.2.dmg)
 
+
 **v0.5.1** - [Release Notes](./release-note/v0.5.1)
+
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.1.dmg)
 
+
 **v0.5.0** - [Release Notes](./release-note/v0.5.0)
+
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.0.dmg)
