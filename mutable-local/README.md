@@ -1,7 +1,7 @@
 ## Mutable Local App
-Mutable Local App is a desktop tool that provides a simple way to develop microservices locally as well as deploy, manage and scale them on Mutable Cloud. The app is currently available on MacOS and Linux.
+Mutable Local App provides a simple way to develop microservices locally as well as deploy, manage and scale them on Mutable Cloud and Edge. The app is currently available on MacOS and Linux.
 
-We have built Mutable Local App from the perspective of developers. We created it to allow customers and users develop apps faster and better. With this in mind, please do not hesitate to contact us on Twitter [@mutable](https://twitter.com/mutable) and join us on [Slack](http://slack.mutable.io/).
+We have built Mutable Local App from the perspective of developers. We created it to allow customers and users to develop apps faster and better. With this in mind, please do not hesitate to contact us on Twitter [@mutable](https://twitter.com/mutable) and join us on [Slack](http://slack.mutable.io/).
 
 The current version has a tight integration for Node.js. However, you can develop in any language of your choice.
 
@@ -20,7 +20,7 @@ The current version has a tight integration for Node.js. However, you can develo
 
 
 ## Deploying
-To deploy on Mutable Cloud, you need `.mutable` and `Dockerfile` files in the root of the service directory. 
+To deploy on Mutable Cloud, you need `.mutable` and `Dockerfile` files in the root of the service directory.
 
 ## .mutable
 ```json
