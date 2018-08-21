@@ -1,13 +1,13 @@
 ## Mutable Local App
-Mutable Local App is a desktop tool for MacOs and Linux. Its primary purpose is to provide a simple way to develop and manage microservices and deploy and scale them on Mutable Cloud.
+Mutable Local App provides a simple way to develop microservices locally as well as deploy, manage and scale them on Mutable Cloud and Edge. The app is currently available on MacOS and Linux.
 
-We have built Mutable Local App from the perspective of developers. We created it to allow us and customers and users to make apps faster and better. With this in mind, please do not hesitate to contact us on Twitter [@mutable](https://twitter.com/mutable) and join us on [Slack](http://slack.mutable.io/).
+We have built Mutable Local App from the perspective of developers. We created it to allow customers and users to develop apps faster and better. With this in mind, please do not hesitate to contact us on Twitter [@mutable](https://twitter.com/mutable) and join us on [Slack](http://slack.mutable.io/).
 
-The current version has a tight integration for Node.js. However, you can develop in any language of your choice. There are a two requirements; a [policy](./README.md#.mutable) file and a [Dockerfile](./README.md#Dockerfile); to deploy the service on Mutable Cloud.
+The current version has a tight integration for Node.js. However, you can develop in any language of your choice.
 
 
 ## Installing
-*Tested on macOS 10.13.6 & Ubuntu 18.04.1 LTS.* [Previous Releases](./README.md#previous-rleases)
+*Tested on macOS 10.13.6 & Ubuntu 18.04.1 LTS.* [Previous Releases](./README.md#previous-releases)
 
 **Current Production Release**
 
@@ -20,7 +20,7 @@ The current version has a tight integration for Node.js. However, you can develo
 
 
 ## Deploying
-To deploy on Mutable Cloud, you need a `.mutable` and a `Dockerfile` in the root of the service directory. 
+To deploy on Mutable Cloud, you need `.mutable` and `Dockerfile` files in the root of the service directory.
 
 ## .mutable
 ```json
@@ -64,28 +64,28 @@ CMD ["start"]
 
 ## Previous Releases
 
-**v0.6.1** - [Release Notes](./release-notes/v0.6.1.md)
+**v0.6.1**
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.1.dmg)
 
 [Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.1.zip)
 
 
-**v0.6.0** - [Release Notes](./release-notes/v0.6.0.md)
+**v0.6.0**
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.0.dmg)
 
 
-**v0.5.2** - [Release Notes](./release-notes/v0.5.2.md)
+**v0.5.2**
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.2.dmg)
 
 
-**v0.5.1** - [Release Notes](./release-notes/v0.5.1.md)
+**v0.5.1**
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.1.dmg)
 
 
-**v0.5.0** - [Release Notes](./release-notes/v0.5.0.md)
+**v0.5.0**
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.0.dmg)
