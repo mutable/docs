@@ -20,7 +20,7 @@ The current version has a tight integration for Node.js. However, you can develo
 
 
 ## Deploying
-To deploy on Mutable Cloud, you need `.mutable` and `Dockerfile` files in the root of the service directory.
+To deploy on Mutable Cloud, you need `.mutable` and `Dockerfile` files in the root of the service directory. You also need to set the server port from the environment variable.
 
 ## .mutable
 ```json
@@ -37,7 +37,7 @@ To deploy on Mutable Cloud, you need `.mutable` and `Dockerfile` files in the ro
 ```
 The `.mutable` object, and Mutable Cloud, requires a `healthCheck` endpoint which responds with a lag ping.
 
-Example in Node.js using [toobusy-js](https://www.npmjs.com/package/toobusy-js). 
+Example in Node.js using [toobusy-js](https://www.npmjs.com/package/toobusy-js).
 
 ```js
 return tooBusy.lag()+''
@@ -55,12 +55,15 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 COPY . /usr/src/app
-RUN npm install 
+RUN npm install
 
 ENV NODE_ENV production
 ENTRYPOINT ["npm", "run"]
 CMD ["start"]
 ```
+## Server file
+In Mutable Cloud, server port is being set up through environment variable, so make sure your server port is not hard coded and looks like this:
+`port: process.env.PORT || 3000`
 
 ## Previous Releases
 
