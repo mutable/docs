@@ -61,7 +61,7 @@ ENV NODE_ENV production
 ENTRYPOINT ["npm", "run"]
 CMD ["start"]
 ```
-## Server file
+## Server port
 In Mutable Cloud, server port is being set up through environment variable, so make sure your server port is not hard coded and looks like this:
 `port: process.env.PORT || 3000`
 
