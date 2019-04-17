@@ -7,15 +7,15 @@ The current version has a tight integration for Node.js. However, you can develo
 
 
 ## Installing
-*Tested on macOS 10.13.6 & Ubuntu 18.04.1 LTS.* [Previous Releases](./README.md#previous-releases)
+*Tested on macOS 10.14.3 & Ubuntu 18.04.1 LTS.* [Previous Releases](./README.md#previous-releases)
 
 **Current Production Release**
 
-**v0.7.1** - [Release Notes](./release-notes/v0.7.1.md)
+**v0.8.2** - [Release Notes](./release-notes/v0.8.2.md)
 
-[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.1.dmg)
+[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.8.2.dmg)
 
-[Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.1.tar.gz)
+[Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.8.2.tar.gz)
 
 
 
@@ -66,6 +66,12 @@ In Mutable Cloud, server port is being set up through environment variable, so m
 `port: process.env.PORT || 3000`
 
 ## Previous Releases
+**v0.7.4**
+
+[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.4.dmg)
+
+[Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.4.zip)
+
 
 **v0.6.1**
 
