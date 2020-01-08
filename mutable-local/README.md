@@ -17,7 +17,7 @@ The current version has a tight integration for Node.js. However, you can develo
 
 **Current Production Release**
 
-**v0.9.22** - [Release Notes](./release-notes/v0.9.22.md)
+**v0.9.22**
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.9.22.dmg)
 
