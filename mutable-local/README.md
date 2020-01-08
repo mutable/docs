@@ -1,4 +1,5 @@
 
+
 # Mutable App
 - [**About**](#mutable-local)
 - [**Installing**](#installing)
@@ -44,13 +45,13 @@ The current version has a tight integration for Node.js. However, you can develo
 # Local Development
 In order for you to take full advantage of everything the Mutable App has to offer, please follow these instructions. 
 
-When creating your Stacks and Services through the Mutable App, it will generate all the files and folders inside `${user}/home/mutable` directory (Ubuntu). If you have an existing project that you would like to run with Mutable, you must move them into that directory; otherwise, they won't be visible for the Mutable App.
+When creating your Stacks and Services through the Mutable App, it will generate all the files and folders inside `${user}/home/mutable` directory (Ubuntu). If you have an existing project that you would like to run with Mutable, you must move them into that directory, otherwise they won't be visible for the Mutable App.
 
 ## Creating Stack
 Open Mutable App and click on `Create a new Stack` button.
 ![Screenshot from 2019-06-03 15-11-24](https://user-images.githubusercontent.com/20372024/58798030-980c7f80-8612-11e9-829a-37ee83519b36.png)
 
-Input your project name into the field the app. 
+Input your project name into the field. 
 `Services` column shows the number of services currently in your Stack.  
 `Deployed` column shows how many of them are currently deployed to the Mutable Cloud.  
 ![Screenshot from 2019-06-03 15-12-33](https://user-images.githubusercontent.com/20372024/58798567-056ce000-8614-11e9-8191-a6381ad23faf.png)
@@ -339,6 +340,4 @@ Note: `Proxy` service's configuration must include the configuration of the depl
 **v0.5.0**
 
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.0.dmg)
-
-
 
