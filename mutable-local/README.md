@@ -1,7 +1,9 @@
+
 # Mutable App
 - [**About**](#mutable-local)
 - [**Installing**](#installing)
 - [**How to use**](#how-to-use)
+-  [**Previous Releases**](#previous-releases)
 
 
 ## Mutable Local
@@ -22,96 +24,6 @@ The current version has a tight integration for Node.js. However, you can develo
 [macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.9.22.dmg)
 
 [Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.9.22.tar.gz)
-
-
-
-## Deploying
-To deploy on Mutable Cloud, you need `.mutable` and `Dockerfile` files in the root of the service directory. You also need to set the server port from the environment variable.
-
-## .mutable
-```json
-{
-    "watch": "routes/*.js,app.js,api/*.js",
-    "healthCheck": "health",
-    "watchRestartTest": false,
-    "watchRestartService": true,
-    "healthCheckType": "http",
-    "minContainers": 1,
-    "maxContainers": 1,
-    "memory": 256
-}
-```
-The `.mutable` object, and Mutable Cloud, requires a `healthCheck` endpoint which responds with a lag ping.
-
-Example in Node.js using [toobusy-js](https://www.npmjs.com/package/toobusy-js).
-
-```js
-return tooBusy.lag()+''
-```
-
-*Note: the response must be a string.*
-
-## Dockerfile
-Example for Node.js
-
-```Dockerfile
-FROM node:12.14.0
-
-RUN mkdir -p /usr/src/app
-WORKDIR /usr/src/app
-
-COPY . /usr/src/app
-RUN npm install
-
-ENV NODE_ENV production
-ENTRYPOINT ["npm", "run"]
-CMD ["start"]
-```
-## Server port
-In Mutable Cloud, server port is being set up through environment variable, so make sure your server port is not hard coded and looks like this:
-`port: process.env.PORT || 3000`
-
-## Previous Releases
-**v0.8.2**
-
-[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.8.2.dmg)
-
-[Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.8.2.tar.gz)
-
-
-**v0.7.4**
-
-[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.4.dmg)
-
-[Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.4.zip)
-
-
-**v0.6.1**
-
-[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.1.dmg)
-
-[Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.1.zip)
-
-
-**v0.6.0**
-
-[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.0.dmg)
-
-
-**v0.5.2**
-
-[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.2.dmg)
-
-
-**v0.5.1**
-
-[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.1.dmg)
-
-
-**v0.5.0**
-
-[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.0.dmg)
-
 
 
 
@@ -318,6 +230,53 @@ After Associating the `Service` tab will show the list of the `Hosted Service` v
 The list is empty because we haven't deployed the service yet. 
 
 ## Deploying Service
+To deploy a `Service` on Mutable Cloud, you need `.mutable` and `Dockerfile` files in the root of the service directory. You also need to set the server port from the environment variable.
+
+### .mutable
+```json
+{
+    "watch": "routes/*.js,app.js,api/*.js",
+    "healthCheck": "health",
+    "watchRestartTest": false,
+    "watchRestartService": true,
+    "healthCheckType": "http",
+    "minContainers": 1,
+    "maxContainers": 1,
+    "memory": 256
+}
+```
+The `.mutable` object, and Mutable Cloud, requires a `healthCheck` endpoint which responds with a lag ping.
+
+Example in Node.js using [toobusy-js](https://www.npmjs.com/package/toobusy-js).
+
+```js
+return tooBusy.lag().toString()
+```
+
+*Note: the response must be a string.*
+
+### Dockerfile
+Example for Node.js
+
+```Dockerfile
+FROM node:12.14.0
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+COPY . /usr/src/app
+RUN npm install
+
+ENV NODE_ENV production
+ENTRYPOINT ["npm", "run"]
+CMD ["start"]
+```
+### Server port
+In Mutable Cloud, server port is being set up through environment variable, so make sure your server port is not hard coded and looks like this:
+`port: process.env.PORT || 3000`
+
+
+### Deploying
 Go to `Snapshot` tab to create a Snapshot of your service at that moment. 
 ![Screenshot from 2019-06-05 12-27-12](https://user-images.githubusercontent.com/20372024/58941651-43414400-878d-11e9-9a06-00b5c4419247.png)
 
@@ -337,5 +296,49 @@ Go back to the `Service` tab and you'll see the deployed snapshot.
 
 Repeat the process if you want to deploy all the other services. 
 
-Note: `Proxy` service's configuration must include the configuration of the deployed services (needs improvement).
+Note: `Proxy` service's configuration must include the configuration of the deployed services.
+
+
+## Previous Releases
+**v0.8.2**
+
+[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.8.2.dmg)
+
+[Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.8.2.tar.gz)
+
+
+**v0.7.4**
+
+[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.4.dmg)
+
+[Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.7.4.zip)
+
+
+**v0.6.1**
+
+[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.1.dmg)
+
+[Linux 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.1.zip)
+
+
+**v0.6.0**
+
+[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.6.0.dmg)
+
+
+**v0.5.2**
+
+[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.2.dmg)
+
+
+**v0.5.1**
+
+[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.1.dmg)
+
+
+**v0.5.0**
+
+[macOS 64-bit](https://s3.amazonaws.com/local.mutable.io/app/MutableV0.5.0.dmg)
+
+
 
