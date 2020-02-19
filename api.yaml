@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+  description: Mutable Cloud API
+  version: 2.0.1
+  title: Mutable Cloud API
+  contact:
+    email: i@mutable.io
+paths:
+  /health:
+    get:
+      summary: Test
+      description: hello
+      responses:
+        '200':
+          description: search artifacts matching criterias
+          content:
+            text/plain:
+              schema:
+                type: string
